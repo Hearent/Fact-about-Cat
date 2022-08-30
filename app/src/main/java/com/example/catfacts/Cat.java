@@ -4,11 +4,11 @@ import com.google.gson.annotations.SerializedName;
 
 public class Cat {
     @SerializedName("fact")
-    public String catFacts;
+    String catFacts;
     @SerializedName("length")
-    public String factsLength;
+    Integer factsLength;
 
-    public Cat(String catFacts, String factsLength) {
+    public Cat(String catFacts, Integer factsLength) {
         this.catFacts = catFacts;
         this.factsLength = factsLength;
     }
@@ -17,7 +17,7 @@ public class Cat {
         return catFacts;
     }
 
-    public String getFactsLength() {
+    public Integer getFactsLength() {
         return factsLength;
     }
 }
