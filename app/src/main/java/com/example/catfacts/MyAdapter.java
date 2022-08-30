@@ -18,7 +18,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHoler>{
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHoler holder, int position) {
-
+        holder.text_fact.setText("Ala ma kotaAla ma kotaAla ma kotaAla ma kotaAla ma kotaAla ma kotaAla ma kotaAla ma kota");
+        holder.text_factLength.setText("11");
     }
 
     @Override
@@ -29,17 +30,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHoler>{
 
 class MyViewHoler extends RecyclerView.ViewHolder{
 
-    private TextView text_fact;
-    private TextView text_factLength;
+    TextView text_fact;
+    TextView text_factLength;
     public MyViewHoler(@NonNull View itemView) {
         super(itemView);
         text_fact = itemView.findViewById(R.id.facts);
         text_factLength = itemView.findViewById(R.id.factsLendth);
     }
-    public TextView get_fact(){
-        return text_fact;
-    }
-    public TextView get_factLength(){
-        return text_factLength;
-    }
+//    public TextView get_fact(){
+//        return text_fact;
+//    }
+//    public TextView get_factLength(){
+//        return text_factLength;
+//    }
 }

@@ -2,24 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:weightSum="5"
     android:orientation="horizontal">
 
     <TextView
         android:id="@+id/facts"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
         android:layout_weight="1"
+        android:layout_marginStart="5dp"
         android:gravity="center"
         android:text="HINT"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/factsLendth"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
-        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_weight="4"
         android:gravity="center"
         android:text="HINT"
         android:textSize="20sp" />
